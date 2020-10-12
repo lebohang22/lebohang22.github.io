@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Portfolio</title>
+
+    <!--link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/-->
+    <link href="lebohang22.github.io/styles.css" type="text/css" rel="Stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  </head>
+ 
+ 
+  
+</head>
+
+<body>
+   
+    <script>
+    var x = document.getElementById("demo");
+    window.onload = getLocation;
+    function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+    }
+
+    function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+    }
+
+    function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+        x.innerHTML = "User denied the request for Geolocation."
+        break;
+        case error.POSITION_UNAVAILABLE:
+        x.innerHTML = "Location information is unavailable."
+        break;
+        case error.TIMEOUT:
+        x.innerHTML = "The request to get user location timed out."
+        break;
+        case error.UNKNOWN_ERROR:
+        x.innerHTML = "An unknown error occurred."
+        break;
+        
+    }
+    }
+    </script>
+        
+
+
+    
+
+    <section id="opening-background">
+        
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+                <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#index">Home</a></li>
+                            <li><a href="#little-about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="hero-text">
+           
+            <h1>Hi There! Good to see you. Have fun browsing!</h1>
+        </div>
+        
+    </section>
+
+    <section id="little-about" style="background-image: url('images/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg');" style="height: 50vh;">
+        <h1>About Me</h1>
+        <div class="box">
+            <img src="images/edit.jpg" alt="" class="box-img">
+            <h1>
+          Lebohang Mohlamme</h1>
+          <h5>
+          Final Year BSc IT Student 2020  - Future Web Developer</h5>
+          <p>
+            A good-natured, open-minded problem-solver with a strong sense of self.
+            Trustworthiness and integrity form an integral part of who she is. Resilient in every
+            aspect; no stranger to challenges. Believes in prudent listening and communication are the key to forming healthy
+            relationships, professionally and otherwise. Extremely passionate about helping people in
+            any way possible, after all, one kind gesture can change the world, one individual, at
+            a time, thus believing in teamwork. On the upside, she is an easy-going young woman who appreciates the
+            gift of life and family with thirst or an appetite for knowledge and independence. She
+            aspires to bring motivation and hope to herself and everyone.</p>
+            
+            <p style="color:orange;" style="font-family: Arial, Helvetica, sans-serif;" style="font: bolder;" style="font-weight: 400;">I am looking for an exciting opportunity match my ambitious nature and to kick-start
+                my career in the IT world and show off my potential. As a dynamic young person,
+                flexibility is at the core and a top priority. I would like to be in an experimental
+                environment that promotes creative problem-solving as well as team-building and
+                cooperation over conflict. I look forward to realizing my potential and expanding my
+                professional knowledge and training.
+                I bring passion and divergent thinking combined with a thirst for knowledge and
+                personal and professional growth which is what this opportunity would grant me. My
+                appreciable interpersonal skills would also be a an added benefit, which, I read, is
+                what sets your culture apart. Eventually, the long-term goal would be to grow
+                professionally into a System Analyst.</p>
+            <div>
+            <a href="CV_LEBOHANG_AYANDA_MOHLAMME_2020.pdf" download="CV"><button class="rounded"><i class="fas fa-download"></i>Download CV</button></a>
+            </div>
+        
+    </section>
+
+   
+    
+    <section id="skills">
+      
+        <div class="skills-area">
+            
+            <h1>Skills</h1>
+            <br>
+            <br>
+
+
+            <ul class="box">
+                <li><span class="line box1"></span><b>Java &nbsp; (90%)</b></li>
+                <li><span class="line box2"></span><b>C# &nbsp; (80%)</b></li>
+                <li><span class="line box3"></span><b>Python &nbsp; (85%)</b></li>
+                <li><span class="line box4"></span><b>HTML &nbsp; (70%)</b></li>
+                <li><span class="line box5"></span><b>CSS &nbsp; (80%)</b></li>
+                <li><span class="line box6"></span><b>C++ &nbsp; (90%)</b></li>
+                
+            </ul>
+        </div>
+       
+    </section>
+   
+   
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+
+            <div class="flex">
+                <div id="form-container">
+                <h3>Messages Replied To As Soon As Possible</h3>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Full name.."/>
+
+                        <label for="email">Email</label>
+                        <input type="email" required id="email" placeholder="Email.."/>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Write your message here.."></textarea>
+
+                        <button class="rounded">Send Message</button>
+                    </form>
+                </div>
+
+                <div id="address-container">
+                    <label>Address</label>
+                    <address>
+                        14564/132 Extension 7B, Evaton West, 1984
+                    </address>
+
+                    <label>Email Address</label>
+                    <a href="mailto:mohlammelebohang22@gmail.com">mohlammelebohang22@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+        
+</body>
+</html>
